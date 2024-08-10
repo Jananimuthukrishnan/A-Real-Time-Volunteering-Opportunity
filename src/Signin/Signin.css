@@ -1,0 +1,47 @@
+.signinpage {
+  height: 100vh; /* Ensures full viewport height */
+  width: 100%;
+  background-image: url("C:/Users/HP/Documents/logggggg.avif"); /* Update with your image path */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add some padding around the container */
+  box-sizing: border-box;
+}
+
+.form-container {
+  max-width: 350px; /* Reduced width of the form container */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Adjusted padding to make the form smaller */
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 100px; /* Increased top margin to ensure space from the navbar */
+  margin-bottom: 50px; /* Adjust bottom margin to fit design */
+}
+
+.form-container h1 {
+  margin-bottom: 20px; /* Increased margin below heading for better spacing */
+}
+
+.form-container .MuiTextField-root {
+  width: 100%;
+}
+
+button[type="submit"] {
+  margin-top: 20px; /* Adjusted margin for submit button */
+}
+
+@media (max-width: 768px) {
+  .form-container {
+      width: 90%;
+      padding: 15px; /* Adjust padding for smaller screens */
+      margin-top: 60px; /* Adjusted top margin for smaller screens */
+      margin-bottom: 20px; /* Adjusted bottom margin for smaller screens */
+  }
+}

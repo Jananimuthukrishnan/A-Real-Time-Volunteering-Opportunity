@@ -1,0 +1,53 @@
+.benefit-section {
+    background-color: white; /* White background */
+    color: black; /* Blue color for text */
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .benefit-card {
+    flex: 0 1 150px; /* Adjust the width of the cards */
+    padding: 20px;
+    text-align: center;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  
+  .benefit-card.lower-stress {
+    background-image: url("C:\Users\HP\Documents\im6.jpg");
+  }
+  
+  .benefit-card.physical-health {
+    background-image: url("C:\Users\HP\Documents\im4.jpg");
+  }
+  
+  .benefit-card.happiness {
+    background-image: url("C:\Users\HP\Documents\im3.jpg");
+  }
+  
+  .benefit-card.new-friends {
+    background-image: url("C:\Users\HP\Documents\im2.jpg");
+  }
+  
+  .benefit-card.developing-skills {
+    background-image: url("C:\Users\HP\Documents\im1.jpg");
+  }
+  
+  .benefit-card.personal-growth {
+    background-image: url("C:\Users\HP\Downloads\increase.png");
+  }
+  
+  .benefit-card p {
+    margin-top: 60px; /* Adjust to create space for the background image */
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

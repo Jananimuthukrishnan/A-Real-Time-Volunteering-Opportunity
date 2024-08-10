@@ -1,0 +1,31 @@
+.lan-img{
+  background-image: url("C:\Users\HP\Documents\onimg.jpg"); /* Ensure correct path */
+  background-repeat: no-repeat; /* Adjust positioning */
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: 700px;
+}
+.lan-all{
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+}
+.lan-con{
+  width: 50%;
+}
+.lan-con h1{
+  color: #007bff;
+  font-size:40px;
+  
+}
+
+.applay-btn{
+  height: 50px;
+  width: 120px;
+}
+.lan-span{
+  margin-left: 100px;
+}

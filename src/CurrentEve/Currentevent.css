@@ -1,0 +1,61 @@
+.currentevent-event-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
+    gap: 10px; /* Space between the cards */
+    justify-content: space-between;
+  }
+  
+  .currentevent-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0; /* Only vertical margins needed now */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width within the grid cell */
+    box-sizing: border-box;
+  }
+  
+  .currentevent-card-header {
+    height: 120px; /* Adjusted height to make it smaller */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .currentevent-card-content {
+    padding: 10px; /* Reduced padding */
+  }
+  
+  .currentevent-card-content h3 {
+    margin: 10px 0;
+  }
+  
+  .currentevent-card-content p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Specific backgrounds for each event */
+  .currentevent-card-header.event1 {
+    background-image: url("C:/Users/HP/Documents/cv6.jpeg");
+  }
+  
+  .currentevent-card-header.event2 {
+    background-image: url("C:/Users/HP/Documents/cv5.jpeg");
+  }
+  
+  .currentevent-card-header.event3 {
+    background-image: url("C:/Users/HP/Documents/cv4.jpeg");
+  }
+  
+  .currentevent-card-header.event4 {
+    background-image: url("C:/Users/HP/Documents/cv3.jpeg");
+  }
+  
+  .currentevent-card-header.event5 {
+    background-image: url("C:/Users/HP/Documents/cv2.jpeg");
+  }
+  
+  .currentevent-card-header.event6 {
+    background-image: url("C:/Users/HP/Documents/cv1.jpeg");
+  }
+  

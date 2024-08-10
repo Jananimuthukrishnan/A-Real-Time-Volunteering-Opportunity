@@ -1,0 +1,134 @@
+.leaderboard {
+  width: 200%; /* Increased from 95% to 100% */
+  max-width: 1000px; /* Increased from 600px to 700px */
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.leaderboard-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.leaderboard-tabs span {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.leaderboard-tabs .active {
+  border-bottom: 2px solid black;
+}
+
+.leaderboard-list {
+  background: lightskyblue;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.leaderboard-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-item.top-three .rank {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.rank {
+  font-size: 1.2rem;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.username {
+  color: #666;
+}
+
+.points {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Add these classes to handle the images */
+.user-image.penny12 {
+  background-image: url("C:/Users/HP/Documents/emvo_1.avif");
+}
+
+.user-image.annvit {
+  background-image: url("C:/Users/HP/Documents/vo7.avif");
+}
+
+.user-image.john_1994 {
+  background-image: url("C:/Users/HP/Documents/vo6.jpg");
+}
+
+.user-image.but_128 {
+  background-image: url("C:/Users/HP/Documents/vo4.jpg");
+}
+
+.user-image.bd {
+  background-image: url("C:/Users/HP/Documents/vo3.jpg");
+}
+
+.user-image.hoPk {
+  background-image: url("C:/Users/HP/Documents/v5.jpg");
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .leaderboard {
+    width: 100%; /* Increased from 95% to 100% */
+    padding: 10px;
+  }
+
+  .leaderboard-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .leaderboard {
+    width: 700px; /* Increased from 600px to 700px */
+    padding: 20px;
+  }
+
+  .leaderboard-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

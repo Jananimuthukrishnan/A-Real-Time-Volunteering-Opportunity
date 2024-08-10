@@ -1,0 +1,82 @@
+.contact-us-container {
+    background-image: url("C:\Users\HP\Documents\cvont.avif"); /* Update with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-us {
+    max-width: 350px; /* Reduced form width */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px; /* Added border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-us h2 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Added border radius for input and textarea */
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 80px;
+    resize: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px; /* Added border radius for button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.feedback-message {
+    margin-top: 20px;
+    color: green;
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    .contact-us {
+        width: 90%;
+    }
+}

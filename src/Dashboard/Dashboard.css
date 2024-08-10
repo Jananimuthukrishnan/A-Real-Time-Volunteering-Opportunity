@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.dashboard-container {
+  display: flex;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 250px; /* Add margin to accommodate the fixed sidebar */
+  padding: 20px;
+  background-color: #fff;
+}
+
+.menu-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+}
+
+.dashheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date-group-select {
+  display: flex;
+  gap: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #f8f9fa;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.charts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chart, .top-volunteers {
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px;
+  background-color: #f8f9fa;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.activity-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.volunteer-activity, .additional-stats {
+  flex: 1;
+  padding: 10px;
+  margin: 0 15px;
+  background-color: #f8f9fa;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

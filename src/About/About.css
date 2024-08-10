@@ -1,0 +1,95 @@
+.about-page {
+  padding-top: 100px; /* Adjust as needed for spacing */
+  text-align: center;
+  color: #333;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  position: relative; /* Added for proper positioning of the video */
+}
+
+.about-description {
+  max-width: 600px;
+  margin: 20px;
+  z-index: 1; /* Ensures the text is above the video */
+  background: rgba(255, 255, 255, 0.8); /* Optional: Adds a background to the text for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-description h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-description p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.video-container {
+  position: absolute; /* Positions the video within the parent div */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Ensures the video covers the entire container */
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the container */
+  transform: translate(-50%, -50%); /* Centers the video */
+}
+
+.about-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5px 0;
+  z-index: 1; /* Ensures the stats are above the video */
+}
+
+.stat-item {
+  flex: 1;
+  margin: 5px;
+}
+
+.stat-item h2 {
+  font-size: 2em;
+  color: #007BFF; /* Customize color */
+}
+
+.stat-item p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video-container {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .background-video {
+    height: auto; /* Adjust to maintain aspect ratio */
+  }
+
+  .stat-item {
+    flex: 0 0 100%;
+    margin: 10px 0;
+  }
+}

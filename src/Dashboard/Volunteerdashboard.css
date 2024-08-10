@@ -1,0 +1,73 @@
+.vm-dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.vm-main-content {
+  margin-left: 270px; /* 250px sidebar width + 20px gap */
+  padding: 20px;
+  width: calc(100% - 270px); /* Adjust width to account for sidebar and gap */
+}
+
+.vm-volunteer-table {
+  width: 100%;
+  border-collapse: separate; /* Use separate to enable border-spacing */
+  border-spacing: 0 15px; /* Adds vertical spacing between rows */
+}
+
+.vm-volunteer-table th, .vm-volunteer-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.vm-volunteer-table th {
+  background-color: #f4f4f4;
+}
+
+.vm-volunteer-table tr {
+  background-color: #fff;
+}
+
+.vm-volunteer-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.vm-volunteer-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.vm-edit-modal {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 400px;
+}
+
+.vm-edit-modal h2 {
+  margin-top: 0;
+}
+
+.vm-edit-modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vm-edit-modal label {
+  margin-top: 10px;
+}
+
+.vm-edit-modal input {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.vm-edit-modal button {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,126 @@
+.Footer {
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Darker text color */
+    padding: 40px 0;
+    width: 100%;
+    border-top: 1px solid #e7e7e7; /* Subtle border at the top */
+}
+
+.Footcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items to the top */
+    flex-direction: row; /* Ensures horizontal layout */
+}
+
+.ft-1, .ft-2, .ft-3, .ft-4 {
+    flex: 1; /* Ensure all columns take equal space */
+    margin-bottom: 20px;
+    padding: 0 10px; /* Add padding to separate columns */
+    box-sizing: border-box;
+}
+
+.ft-1 h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007BFF; /* Primary color for brand name */
+}
+
+.ft-1 h3 span {
+    color: #333; /* Differentiates "U" */
+}
+
+.ft-1 p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-icons i {
+    font-size: 24px;
+    color: #007BFF;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.footer-icons i:hover {
+    color: #0056b3;
+}
+
+.ft-2, .ft-3, .ft-4 {
+    font-size: 0.9em;
+}
+
+.ft-2 h5, .ft-3 h5, .ft-4 h5 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+.ft-2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ft-2 ul li {
+    margin-bottom: 10px;
+}
+
+.ft-2 ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.ft-2 ul li a:hover {
+    color: #007BFF;
+}
+
+.ft-3 p, .ft-4 p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.ft-3 p i, .ft-4 p i {
+    margin-right: 10px;
+    color: #007BFF;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack columns vertically on small screens */
+        align-items: center;
+    }
+
+    .ft-1, .ft-2, .ft-3, .ft-4 {
+        flex: 1 1 100%;
+        text-align: center; /* Center text on smaller screens */
+        padding: 10px 0;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+
+    .ft-2 ul, .ft-3 p, .ft-4 p {
+        text-align: center;
+    }
+}

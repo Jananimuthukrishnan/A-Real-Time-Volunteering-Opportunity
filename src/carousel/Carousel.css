@@ -1,0 +1,76 @@
+.feedback-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.feedback-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feedback-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.feedback-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.feedback-rating {
+  margin-bottom: 10px;
+}
+
+.star {
+  color: #ddd; /* Light gray for empty stars */
+  font-size: 14px;
+}
+
+.filled {
+  color: #ffc107; /* Gold for filled stars */
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.feedback-date {
+  font-size: 12px;
+  color: gray;
+}
+
+.image1 {
+  background-image: url("C:/Users/HP/Documents/fvo1.jpg");
+}
+
+.image2 {
+  background-image: url("C:/Users/HP/Documents/fvo2.jpg");
+}
+
+.image3 {
+  background-image: url("C:/Users/HP/Documents/fvo3.jpg");
+}

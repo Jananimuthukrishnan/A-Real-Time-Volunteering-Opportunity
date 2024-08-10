@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .volunteer-stories {
+    padding: 40px 20px;
+  }
+  
+  .vo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section-voheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-voheader h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .vonavigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #007BFF;
+  }
+  
+  .stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .story-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .story-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .story-content {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: to make text more readable */
+  }
+  
+  .story-content h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .story-content p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .read-more {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .story1 {
+    background-image: url("C:\Users\HP\Documents\vs2.avif"); /* Replace with actual path */
+  }
+  
+  .story2 {
+    background-image: url("C:\Users\HP\Documents\vs1.avif"); /* Replace with actual path */
+  }
+  
+  .story3 {
+    background-image: url("C:\Users\HP\Documents\vs3.jpg"); /* Replace with actual path */
+  }
+  

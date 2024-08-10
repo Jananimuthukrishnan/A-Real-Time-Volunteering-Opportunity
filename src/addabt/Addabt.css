@@ -1,0 +1,43 @@
+.aboutt-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Trending Campaigns Section */
+  .trending-campaigns {
+    padding: 10px 20px; /* Reduced top padding */
+    text-align: center;
+  }
+  
+  .campaigns {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .campaign-card {
+    width: 30%;
+  }
+  
+  .campaign-image {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .campaign-image1 {
+    background-image: url("C:/Users/HP/Documents/svo.jpg");
+  }
+  
+  .campaign-image2 {
+    background-image: url("C:/Users/HP/Documents/ssvo.jpg");
+  }
+  
+  .campaign-image3 {
+    background-image: url("C:/Users/HP/Documents/age.jpeg");
+  }
+  
+  .campaign-info {
+    background: white;
+    padding: 10px;
+  }
+  

@@ -1,0 +1,40 @@
+.login-page {
+  height: 100%;
+  width: 100%;
+  background-image: url("C:/Users/HP/Documents/logggggg.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; /* Add top padding to create space between the navbar and form */
+}
+
+.form-container {
+  width: 80%;
+  max-width: 500px; /* Adjust the width to make the form smaller */
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.login-form {
+  background-color: transparent;
+
+  border: solid transparent;
+  padding: 5px; /* Reduce padding to make the form more compact */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-button {
+  width: 120px; /* Smaller button width */
+  margin: 10px 0; /* Center button with spacing above and below */
+  background-color: blue; /* Button color */
+  color: white; /* Text color */
+}
+
+.forgot-password {
+  padding-right: 90px;
+}

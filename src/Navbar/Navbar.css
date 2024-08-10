@@ -1,0 +1,116 @@
+.headernav {
+  background-color: white;
+  color: blue;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.headernav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-image: url("C:/Users/HP/Documents/logovvvooo.k7PExevg9C3ktKMcs8");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.profile-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-image: url('C:/Users/HP/Desktop/V_o/voapp/public/pro.jpg'); /* Update with correct path */
+  background-size: cover;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.profile-name {
+  font-weight: bold;
+  color: black;
+}
+
+.profile-popup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 150px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-popup li {
+  margin: 0;
+  width: 100%;
+}
+
+
+.profile-popup li a,
+.profile-popup li button {
+  color: #007bff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  text-align: left;
+  padding: 8px 12px;
+}
+
+.profile-popup li a:hover,
+.profile-popup li button:hover {
+  background-color: #f0f0f0;
+  text-decoration: underline;
+}

@@ -1,0 +1,60 @@
+.succession-plan {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .succession-plan h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .step {
+    background: lightskyblue;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    max-width: 220px;
+    text-align: center;
+  }
+  
+  .step h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .step p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px;
+  }
+  
+  .master-role {
+    background-image: url("C:\Users\HP\Documents\v1.jpg");
+  }
+  
+  .identify-successor {
+    background-image: url("C:\Users\HP\Documents\v2.jpg");
+  }
+  
+  .train-successor {
+    background-image: url("C:\Users\HP\Documents\v3.jpg");
+  }
+  
+  .move-successor {
+    background-image: url("C:\Users\HP\Documents\wvo1.jpg");
+  }
+  

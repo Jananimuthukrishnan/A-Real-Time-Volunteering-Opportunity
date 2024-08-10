@@ -1,0 +1,46 @@
+.events-page {
+    padding: 80px 20px 20px; /* Increased top padding */
+    background-color: #f5f5f5;
+    text-align: center;
+    min-height: 100vh; /* Ensures the page takes the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .event-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .event-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .events-footer {
+    margin-top: 40px;
+  }
+  
+  .events-footer p {
+    font-size: 1em;
+    color: #555;
+  }
+  

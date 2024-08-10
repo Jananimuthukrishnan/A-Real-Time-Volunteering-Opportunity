@@ -1,0 +1,130 @@
+.donate-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.donate-header {
+  background-image: url("C:\Users\HP\Documents\dvon.jpg"); /* Update the path to the image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 100px 20px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate-header-content {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.8);;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.donate-header h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.donate-header h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.donate-header p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.donate-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.donate-button:hover {
+  background-color: lightskyblue;
+}
+
+.donate-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.donate-card {
+  background-color: lightskyblue;
+  color: black;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.donate-card:hover {
+  background-color: lightskyblue;
+}
+
+.donate-icon {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+/* Update these paths to your actual icon image paths */
+.donate-volunteer-icon {
+  background-image: url("C:\Users\HP\Documents\bv.avif");
+}
+
+.donate-adopt-icon {
+  background-image: url("C:\Users\HP\Documents\aptc.avif");
+}
+
+.donate-involved-icon {
+  background-image: url("C:\Users\HP\Documents\ccp.jpg");
+}
+
+.donate-emergency-icon {
+  background-image: url("C:\Users\HP\Documents\ec.jpg");
+}
+
+.donate-card h2 {
+  margin: 10px 0;
+}
+
+.donate-card p {
+  margin: 10px 0 20px;
+}
+
+.donate-card-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.donate-card-button:hover {
+  background-color: #f2f2f2;
+}
