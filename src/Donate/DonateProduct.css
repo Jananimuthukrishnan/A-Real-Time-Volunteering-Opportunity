@@ -1,0 +1,196 @@
+.gf-donate-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width:80%;
+    padding: 40px; 
+    background-color: #f9f9f9;
+}
+
+.gf-donate-container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 1800px;
+    flex-direction: row; 
+}
+
+.gf-donate-image {
+    background-image: url("C:\Users\HP\Documents\donatevoo.jpg"); 
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    min-height: 600px; 
+}
+
+.gf-donate-form-container {
+    padding: 60px 50px; 
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.gf-donation-progress {
+    margin-bottom: 30px; 
+}
+
+.gf-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.gf-progress {
+    background-color: #007bff;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.gf-progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.gf-donation-amount {
+    margin-bottom: 30px;
+}
+
+.gf-donation-amount label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.gf-donation-amount input {
+    width: 100%;
+    padding: 15px; 
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.gf-donation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px; 
+}
+
+.gf-donation-buttons button {
+    flex: 1;
+    padding: 10px 15px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.gf-donation-buttons button:hover {
+    background-color: #007bff;
+}
+
+.gf-donation-inputs input {
+    width: 100%;
+    padding: 15px; 
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.gf-payment-methods {
+    margin-bottom: 30px; 
+}
+
+.gf-payment-methods label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.gf-payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+
+.gf-payment-icon {
+    width: 50px; 
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.gf-payment-icon.stripe {
+    background-image: url("C:\Users\HP\Documents\stripe.avif");
+}
+
+.gf-payment-icon.paypal {
+    background-image: url("C:\Users\HP\Downloads\business_15801090.png"); 
+}
+
+.gf-payment-icon.mollie {
+    background-image: url("C:\Users\HP\Documents\p3.png"); 
+}
+
+.gf-payment-icon.razorpay {
+    background-image: url("C:\Users\HP\Documents\p4.png"); 
+}
+
+.gf-payment-icon.paystack {
+    background-image: url("C:\Users\HP\Documents\p5.png"); 
+}
+
+.gf-payment-icon.paytm {
+    background-image: url("C:\Users\HP\Documents\p6.png"); 
+}
+
+.gf-payment-icon.square {
+    background-image: url("C:\Users\HP\Documents\p7.png"); 
+}
+
+.gf-submit-button {
+    width: 80%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; 
+    transition: background-color 0.3s;
+}
+
+.gf-submit-button:hover {
+    background-color: #007bff;
+}
+
+
+@media (min-width: 1024px) {
+    .gf-donate-page {
+        padding: 60px; 
+    }
+
+    .gf-donate-container {
+        max-width: 1800px; 
+    }
+
+    .gf-donate-form-container {
+        padding: 80px 60px; 
+    }
+
+    .gf-donate-image {
+        min-height: 700px; 
+    }
+}

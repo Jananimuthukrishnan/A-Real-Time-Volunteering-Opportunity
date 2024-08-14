@@ -52,7 +52,7 @@ const Dashboard = () => {
             <Grid item xs={12} sm={6} md={2.8}>
               <Paper className="stat-card">
                 <Typography variant="h3">360</Typography>
-                <Typography>Volunteers Volunteered</Typography>
+                <Typography>Volunteered</Typography>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={2.8}>

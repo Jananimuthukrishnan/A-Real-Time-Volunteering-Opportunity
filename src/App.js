@@ -18,17 +18,19 @@ import AdminLogin from './Modal/AdminLogin';
 import DonateNow from './Donate/DonateNow';
 import Feedback from './Dashboard/Feedback';
 import Rewards from './Dashboard/Rewards';
+import FeedbackForm from './FeedbackForm/FeedbackForm'; 
+import VolunteerProfile from './Vp/VolunteerProfile';
 
 function NavbarContainer({ openLoginModal }) {
   const location = useLocation();
-  const noNavbarPaths = ['/dashboard', '/vmdashboard', '/emdashboard','/feedback','/rewards'];
+  const noNavbarPaths = ['/dashboard', '/vmdashboard', '/emdashboard','/feedback','/rewards','/profile'];
 
   return !noNavbarPaths.includes(location.pathname) ? <Navbar openModal={openLoginModal} /> : null;
 }
 
 function FooterContainer() {
   const location = useLocation();
-  const noFooterPaths = ['/dashboard', '/vmdashboard', '/emdashboard','/feedback','/rewards'];
+  const noFooterPaths = ['/dashboard', '/vmdashboard', '/emdashboard','/feedback','/rewards','/profile'];
 
   return !noFooterPaths.includes(location.pathname) ? <Footer /> : null;
 }
@@ -104,6 +106,8 @@ function App() {
         <Route path="/emdashboard" element={<Eventdashboard />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/rewards" element={<Rewards />} />
+        <Route path="/feedbackform" element={<FeedbackForm />} /> 
+        <Route path="/profile" element={<VolunteerProfile />} /> 
       </Routes>
       <FooterContainer />
     </Router>

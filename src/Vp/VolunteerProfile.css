@@ -1,0 +1,134 @@
+.volunteer-profile {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .profile-info {
+    margin-left: 20px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .profile-info p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  
+  .profile-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tab {
+    margin-right: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .profile-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .attendance, .bio, .contact-info, .involvement {
+    grid-column: span 2;
+    margin-bottom: 20px;
+  }
+  
+  .attendance, .stats .stat {
+    display: flex;
+    align-items: center;
+  }
+  
+  .attendance .icon, .stat .icon {
+    font-size: 24px;
+    color: #28a745;
+    margin-right: 10px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .stat h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .stat p {
+    margin: 5px 0 0;
+    color: #666;
+  }
+  
+  .bio, .contact-info, .involvement {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-info ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info ul li .icon {
+    margin-right: 10px;
+    color: #666;
+  }
+  
+  .involvement {
+    text-align: center;
+  }
+  

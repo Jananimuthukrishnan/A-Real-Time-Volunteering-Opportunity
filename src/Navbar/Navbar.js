@@ -69,6 +69,7 @@ const Navbar = () => {
             <li><Link to="/event"><h3>Events</h3></Link></li>
             <li><Link to="/donate"><h3>Donate</h3></Link></li>
             <li><Link to="/contact"><h3>Contact</h3></Link></li>
+
             {user ? (
   <li className="profile-icon" onClick={handleProfileClick}>
     <span className="profile-picture"></span>
@@ -77,6 +78,7 @@ const Navbar = () => {
       <div className="profile-popup">
         <ul>
           <li><Link to="/profile">Profile</Link></li>
+          <li><Link to="/feedbackform">Feedback</Link></li>
           <li><button onClick={handleLogout}>Logout</button></li>
         </ul>
       </div>

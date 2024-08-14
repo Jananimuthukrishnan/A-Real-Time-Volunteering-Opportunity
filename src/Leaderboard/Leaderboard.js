@@ -3,12 +3,12 @@ import React from 'react';
 import './Leaderboard.css';
 
 const data = [
-  { rank: 1, name: 'Ann Vitviskaya', username: '@annvit', points: 256, imageClass: 'annvit' },
-  { rank: 2, name: 'Ashley Mo...', username: '@penny12', points: 245, imageClass: 'penny12' },
-  { rank: 3, name: 'John Loreth', username: '@john_1994', points: 236, imageClass: 'john_1994' },
-  { rank: 4, name: 'Theresa Butler', username: '@but_128', points: 230, imageClass: 'but_128' },
-  { rank: 5, name: 'Zachary Boyd', username: '@bd', points: 183, imageClass: 'bd' },
-  { rank: 6, name: 'Harriet Hopkins', username: '@hoPk', points: 177, imageClass: 'hoPk' },
+  { rank: 1, name: 'Janani', username: '@Janani', points: 256, imageClass: 'annvit' },
+  { rank: 2, name: 'Delvina...', username: '@delvina12', points: 245, imageClass: 'penny12' },
+  { rank: 3, name: 'Lokesha', username: '@lokesha_12', points: 236, imageClass: 'john_1994' },
+  { rank: 4, name: 'Thamana', username: '@but_128', points: 230, imageClass: 'but_128' },
+  { rank: 5, name: 'Anupama', username: '@bd', points: 183, imageClass: 'bd' },
+  { rank: 6, name: 'Samantha', username: '@hoPk', points: 177, imageClass: 'hoPk' },
 ];
 
 const Leaderboard = () => {

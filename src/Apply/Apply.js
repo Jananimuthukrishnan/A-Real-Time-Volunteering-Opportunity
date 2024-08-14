@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './Apply.css';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const Apply = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         phone: '',
-        availability:'',
-        interest:'',
-        skills:'',
+        availability: '',
+        interest: '',
+        skills: '',
     });
+
+    const [errors, setErrors] = useState({});
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -19,10 +26,32 @@ const Apply = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Handle form submission logic (e.g., sending data to a server)
-        console.log(formData);
+        let isValid = true;
+        let newErrors = {};
+
+        // Validation: check if all fields are filled
+        Object.keys(formData).forEach((key) => {
+            if (formData[key] === '') {
+                newErrors[key] = 'Please fill it';
+                isValid = false;
+            }
+        });
+
+        setErrors(newErrors);
+
+        if (isValid) {
+            try {
+                const response = await axios.post('http://localhost:9000/Apply', formData);
+                console.log('User Applied:', response.data);
+                alert('Application successful');
+            } catch (error) {
+                console.error('There was an error registering the user!', error);
+                alert('Application failed');
+            }
+            navigate('/landing'); 
+        }
     };
 
     return (
@@ -39,6 +68,7 @@ const Apply = () => {
                         onChange={handleChange}
                         required
                     />
+                    {errors.name && <span className="error">{errors.name}</span>}
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email</label>
@@ -50,6 +80,7 @@ const Apply = () => {
                         onChange={handleChange}
                         required
                     />
+                    {errors.email && <span className="error">{errors.email}</span>}
                 </div>
                 <div className="form-group">
                     <label htmlFor="phone">Phone Number</label>
@@ -61,6 +92,7 @@ const Apply = () => {
                         onChange={handleChange}
                         required
                     />
+                    {errors.phone && <span className="error">{errors.phone}</span>}
                 </div>
                 <div className="form-group">
                     <label htmlFor="availability">Availability</label>
@@ -72,6 +104,7 @@ const Apply = () => {
                         onChange={handleChange}
                         required
                     />
+                    {errors.availability && <span className="error">{errors.availability}</span>}
                 </div>
                 <div className="form-group">
                     <label htmlFor="interest">Interest</label>
@@ -83,6 +116,7 @@ const Apply = () => {
                         onChange={handleChange}
                         required
                     />
+                    {errors.interest && <span className="error">{errors.interest}</span>}
                 </div>
                 <div className="form-group">
                     <label htmlFor="skills">Skills</label>
@@ -94,8 +128,9 @@ const Apply = () => {
                         onChange={handleChange}
                         required
                     />
+                    {errors.skills && <span className="error">{errors.skills}</span>}
                 </div>
-                
+
                 <button type="submit">Submit Application</button>
             </form>
         </div>

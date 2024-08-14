@@ -20,21 +20,22 @@ const Footer = () => {
                         <h5>Quick Links</h5>
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li><a href="/">Organization</a></li>
-                            <li><a href="/">Event</a></li>
-                            <li><a href="/">Donate</a></li>
-                            <li><a href="/">Login</a></li>
+                            <li><a href="/organization">Organization</a></li>
+                            <li><a href="/event">Event</a></li>
+                            <li><a href="/donate">Donate</a></li>
+                            <li><a href="/feedbackform">Feedback</a></li>
+                            {/* <li><a href="/login">Login</a></li> */}
                         </ul>
                     </div>
                     <div className="ft-3">
                         <h5>Contact</h5>
-                        <p><i className="fa-solid fa-phone-volume"></i> +91 173314</p>
-                        <p><i className="fa-solid fa-envelope"></i> kindquest17@gmail.com</p>
-                        <p><i className="fa-solid fa-map-marker-alt"></i> Kalyani, Nadia</p>
+                        <p><i className="fa-solid fa-phone-volume"></i> +91 9012783456</p>
+                        <p><i className="fa-solid fa-envelope"></i> KindQuest@gmail.com</p>
+                        <p><i className="fa-solid fa-map-marker-alt"></i>Coimbatore</p>
                     </div>
                     <div className="ft-4">
                         <h5>Connect With Us</h5>
-                        <p><i className="fa-solid fa-envelope"></i> admin@Kindquestindia.com</p>
+                        <p><i className="fa-solid fa-envelope"></i> KindQuest@gmail.com</p>
                         <p><i className="fa-solid fa-phone"></i> +91 88915 57706</p>
                         <div className="footer-icons">
                             <i className="fa-brands fa-facebook"></i>

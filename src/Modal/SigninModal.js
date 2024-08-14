@@ -58,7 +58,7 @@ const SigninModal = ({ isOpen, onRequestClose, openLoginModal, openAdminLogin })
 
     if (isValid) {
       try {
-        const response = await axios.post('http://localhost:9001/reg', formData);
+        const response = await axios.post('http://localhost:9000/reg', formData);
         console.log('User registered:', response.data);
         alert('Registration successful');
         onRequestClose();

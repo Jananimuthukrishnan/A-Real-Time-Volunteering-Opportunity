@@ -1,5 +1,5 @@
 .contact-us-container {
-    background-image: url("C:\Users\HP\Documents\cvont.avif"); /* Update with your image path */
+    background-image: url("C:\Users\HP\Documents\cvon.avif"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 .contact-us {
     max-width: 350px; /* Reduced form width */
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: white;
     border-radius: 12px; /* Added border radius for rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
